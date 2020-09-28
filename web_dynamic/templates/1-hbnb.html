@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{ cache_id }}">
     <link rel="icon" href="../static/images/icon.png?{{ cache_id }}" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js?{{ cache_id }}"></script>
-    <script src="static/scripts/1-hbnb.js?{{ cache_id }}"></script>
+    <script src="../static/scripts/1-hbnb.js"></script>
     <title>HBnB</title>
   </head>
   <body>
@@ -42,10 +42,10 @@
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''>{{ amenity.name }}</li>
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name"  onclick="PrependItemsToList(this);">{{ amenity.name }}</li>
 	      {% endfor %}
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''> Cundinamarca </li>
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''> Boyaca </li>
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name="Cundinamarca"  onclick="PrependItemsToList(this);"> Cundinamarca </li>
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name="Boyaca"  onclick="PrependItemsToList(this);"> Boyaca </li>
 	    </ul>
 	  </div>
 	</div>

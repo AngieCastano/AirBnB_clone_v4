@@ -1,4 +1,4 @@
-B<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -42,8 +42,10 @@ B<!DOCTYPE html>
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <li><INPUT type="checkbox" checked=''>{{ amenity.name }}</li>
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''>{{ amenity.name }}</li>
 	      {% endfor %}
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''> Cundinamarca </li>
+	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name" checked=''> Boyaca </li>
 	    </ul>
 	  </div>
 	</div>

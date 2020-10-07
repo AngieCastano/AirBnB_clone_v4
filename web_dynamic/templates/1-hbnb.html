@@ -42,11 +42,9 @@
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name=":amenity_name"  onclick="PrependItemsToList(this);">{{ amenity.name }}</li>
+	      <li><INPUT type="checkbox" style="margin-right:10px;" data-id=":amenity_id" data-name=":amenity_name">{{ amenity.name }}</li>
 	      {% endfor %}
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name="Cundinamarca"  onclick="PrependItemsToList(this);"> Cundinamarca </li>
-	      <li><INPUT type="checkbox", data-id=":amenity_id" data-name="Boyaca"  onclick="PrependItemsToList(this);"> Boyaca </li>
-	    </ul>
+	      </ul>
 	  </div>
 	</div>
 	<button type="button">Search</button>

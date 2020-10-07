@@ -1,5 +1,5 @@
 // Script that is executed only when DOM is loaded with jQuery
-
+//falla
 let checked_box = {};
 $(document).ready(function () {
     $('input:checkbox').change(function () {

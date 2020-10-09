@@ -28,21 +28,21 @@ function CheckedList(){
 	}
 	NotOverflow()	
 }
-
-const apiStatus = $('DIV#api_status');
-$.ajax('http://0.0.0.0:5001/api/v1/status/').done(function (data) {
+$.ajax('http://127.0.0.1:5001/api/v1/status/').done(function (data) {    
     if (data.status === 'OK') {
-      apiStatus.addClass('available');
+      $('DIV#api_status').addClass('available');
+      $('DIV#api_status').removeClass('colr');
     } else {
-      apiStatus.removeClass('available');
+      $('DIV#api_status').removeClass('available');
+	$('DIV#api_status').addClass('colr');
     }
   });
-  
-  const apiStatus = $('DIV#api_status');
-  $.ajax('http://127.0.0.1:5001/api/v1/status/').done(function (data) {
-	  if (data.status === 'OK') {
-		apiStatus.addClass('available');
-	  } else {
-		apiStatus.removeClass('available');
-	  }
-	});
+  $.ajax('http://0.0.0.0:5001/api/v1/status/').done(function (data) {    
+    if (data.status === 'OK') {
+      $('DIV#api_status').addClass('available');
+      $('DIV#api_status').removeClass('colr');
+    } else {
+      $('DIV#api_status').removeClass('available');
+	$('DIV#api_status').addClass('colr');
+    }
+  });

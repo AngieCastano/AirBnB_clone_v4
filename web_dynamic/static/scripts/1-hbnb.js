@@ -12,7 +12,7 @@ function NotOverflow() {
 		H_4_to_add.push(H_4[i].slice(0, remaining));
 	}
 	H_4_to_add.push("...");
-  document.getElementById("demo").innerHTML = H_4_to_add;
+  document.getElementById("amenities_h4").innerHTML = H_4_to_add;
 }
 function CheckedList(){
 	HtmlInput = document.getElementsByTagName("INPUT");
